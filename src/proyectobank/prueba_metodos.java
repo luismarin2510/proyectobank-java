@@ -6,7 +6,10 @@ public class prueba_metodos {
 		cuenta micuenta = new cuenta();
 		micuenta.saldo = 300;
 		micuenta.depositar(200);
+
+		System.out.println(micuenta.saldo);
 		
+		micuenta.retirar(100);
 		System.out.println(micuenta.saldo);
 	}
 }
