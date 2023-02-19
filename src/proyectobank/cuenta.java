@@ -2,12 +2,10 @@ package proyectobank;
 
 public class cuenta {
 
-	double saldo;
-	int agencia;
-	int numero;
+	private double saldo;
+	private int agencia;
+	private int numero;
 	cliente titular;
-	
-	
 
 	public void depositar(double valor) {
 		this.saldo = this.saldo + valor;
@@ -27,9 +25,36 @@ public class cuenta {
 			this.saldo = this.saldo - valor;
 			cuenta.depositar(valor);
 			return true;
-		}else {
+		} else {
 			return false;
 		}
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(int agencia) {
+		if (agencia > 0) {
+			this.agencia = agencia;
+		}
+
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 
 }
