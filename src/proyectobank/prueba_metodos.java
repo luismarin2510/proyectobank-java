@@ -26,7 +26,7 @@ public class prueba_metodos {
 		cuentadediego.setAgencia(1);
 		cuentadediego.titular = Diego;
 		
-		System.out.println(cuentadediego.titular.documento);
+		System.out.println(cuentadediego.titular.getDocumento());
 		
 	}
 }
