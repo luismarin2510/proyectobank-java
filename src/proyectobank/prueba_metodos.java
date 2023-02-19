@@ -18,9 +18,9 @@ public class prueba_metodos {
 		
 		cliente Diego = new cliente();
 		
-		Diego.nombre = "Diego r";
-		Diego.documento = "123456789";
-		Diego.telefono = "34157892";
+		Diego.setNombre("Diego r");
+		Diego.setDocumento("123456789");
+		Diego.setTelefono("34157892");
 		
 		cuenta cuentadediego = new cuenta();
 		cuentadediego.setAgencia(1);
