@@ -6,8 +6,7 @@ public class crear_cuenta {
 		// variable          = valor 
 		cuenta primeracuenta = new cuenta();
 		primeracuenta.saldo = 1000;
-		primeracuenta.titular = "luis";
-		System.out.println(primeracuenta.saldo + primeracuenta.titular);
+		System.out.println(primeracuenta.saldo+ "luis");
 		
 		cuenta segundacuenta = new cuenta();
 		segundacuenta.saldo =2500;

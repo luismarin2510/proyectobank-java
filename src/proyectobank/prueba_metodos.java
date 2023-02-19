@@ -15,5 +15,18 @@ public class prueba_metodos {
 		cuentadejimena.transferir(400, micuenta);
 		System.out.println(cuentadejimena.saldo+" saldo de jimena");
 		System.out.println(micuenta.saldo + " saldo de mi cuenta despues de deposito");
+		
+		cliente Diego = new cliente();
+		
+		Diego.nombre = "Diego r";
+		Diego.documento = "123456789";
+		Diego.telefono = "34157892";
+		
+		cuenta cuentadediego = new cuenta();
+		cuentadediego.agencia = 1;
+		cuentadediego.titular = Diego;
+		
+		System.out.println(cuentadediego.titular.documento);
+		
 	}
 }
