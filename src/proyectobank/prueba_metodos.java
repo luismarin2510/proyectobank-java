@@ -24,9 +24,10 @@ public class prueba_metodos {
 		
 		cuenta cuentadediego = new cuenta();
 		cuentadediego.setAgencia(1);
-		cuentadediego.titular = Diego;
+		cuentadediego.setTitular(Diego);
 		
-		System.out.println(cuentadediego.titular.getDocumento());
+		System.out.println(cuentadediego.getTitular().getDocumento());
+		System.out.println(cuentadediego.getTitular().getTelefono());
 		
 	}
 }
