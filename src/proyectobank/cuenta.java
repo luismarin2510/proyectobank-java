@@ -29,15 +29,17 @@ public class cuenta {
 			return false;
 		}
 	}
+
 	/// encapsulamiento de saldo
 	public double getSaldo() {
 		return saldo;
 	}
 
-	// public void setSaldo(double saldo) {
-	// 	this.saldo = saldo;
-	// }
-	/// encapsulamiento de agencia 
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+/// encapsulamiento de agencia 
 	public int getAgencia() {
 		return agencia;
 	}
@@ -48,6 +50,7 @@ public class cuenta {
 		}
 
 	}
+
 /// encapsulamiento de numero 
 	public int getNumero() {
 		return numero;
@@ -56,6 +59,7 @@ public class cuenta {
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
+
 	/// encapsulamiento de titular
 	public cliente getTitular() {
 		return titular;
@@ -64,6 +68,5 @@ public class cuenta {
 	public void setTitular(cliente titular) {
 		this.titular = titular;
 	}
-	
 
 }
