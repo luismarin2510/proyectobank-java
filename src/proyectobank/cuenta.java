@@ -44,13 +44,23 @@ public class cuenta {
 		return agencia;
 	}
 
-	public void setAgencia(int agencia) {
-		if (agencia > 0) {
+	// public void setAgencia(int agencia) {
+	// 	if (agencia > 0) {
+	// 		this.agencia = agencia;
+	// 	} else {
+	// 		System.out.println("No se permite numeros negativos ");
+	// 	}
+
+	// }
+ /// constructor /// para evitar agencias con numeros negativos 
+	public cuenta(int agencia) {
+		if (agencia <= 0) {
+			this.agencia =1;
+		}else {
 			this.agencia = agencia;
 		}
-
 	}
-
+  
 /// encapsulamiento de numero 
 	public int getNumero() {
 		return numero;
