@@ -83,4 +83,12 @@ public class cuenta {
 		this.titular = titular;
 	}
 
+	public static void setTotal(int total) {
+		cuenta.total = total;
+	}
+
+	public static int getTotal() {
+		return total;
+	}
+
 }

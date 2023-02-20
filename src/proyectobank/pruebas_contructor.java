@@ -7,6 +7,8 @@ public class pruebas_contructor {
 		cuenta cuenta2 = new cuenta(1);
 		cuenta cuenta3 = new cuenta(1);
 		
+		cuenta.getTotal();
+		
 	}
 
 }
