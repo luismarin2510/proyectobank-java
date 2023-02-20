@@ -5,7 +5,8 @@ public class cuenta {
 	private double saldo;
 	private int agencia;
 	private int numero;
-	private cliente titular;
+	private cliente titular = new cliente();
+	private static int total = 0;
 
 	public void depositar(double valor) {
 		this.saldo = this.saldo + valor;
@@ -45,22 +46,25 @@ public class cuenta {
 	}
 
 	// public void setAgencia(int agencia) {
-	// 	if (agencia > 0) {
-	// 		this.agencia = agencia;
-	// 	} else {
-	// 		System.out.println("No se permite numeros negativos ");
-	// 	}
+	// if (agencia > 0) {
+	// this.agencia = agencia;
+	// } else {
+	// System.out.println("No se permite numeros negativos ");
+	// }
 
 	// }
- /// constructor /// para evitar agencias con numeros negativos 
+	/// constructor /// para evitar agencias con numeros negativos
 	public cuenta(int agencia) {
+
 		if (agencia <= 0) {
-			this.agencia =1;
-		}else {
+			this.agencia = 1;
+		} else {
 			this.agencia = agencia;
 		}
+		total ++;
+		System.out.println("cuentas que van creadas "+ total);
 	}
-  
+
 /// encapsulamiento de numero 
 	public int getNumero() {
 		return numero;
